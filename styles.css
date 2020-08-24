@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
+
+h1 {
+  margin: 10px;
+  text-align: center;
+}
+.titles {
+  color: #B03A2E;
+  font-family: "Caveat";
+  font-size: 3.6em;
+}
+
+body {
+  background-color: white;
+}
+/* navbar */
+.navbar {
+  text-align: center;
+}
+.navbar a:hover {
+  color: #E8F8F5;
+  background-color: #78281F;
+}
+.navbar a {
+  color: #641E16;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 5px 12px;
+  background-color: white;
+  width: 25%;
+  font-family: "Inconsolata", "Arial";
+}
+
+.navbar .current {
+  color: #78281F;
+  font-weight: bold;
+}
+
+.navbar .current:hover{
+  color: #78281F;
+  font-weight: bold;
+  background-color: white;
+}
+
+/* about me */
+.about {
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.about .section-title {
+  color: rosybrown;
+  font-size: 2.4em;
+  font-family: "Caveat";
+}
+
+.about .upper-title {
+  color: rosybrown;
+  font-size: 1.2em;
+  font-family: "Inconsolata";
+  margin-bottom: 2%;
+}
+
+.about .text-wrapper {
+  position: relative;
+  color: black;
+  margin-bottom: 20%;
+  padding-left: 30%;
+  padding-right: 30%;
+  line-height: 1.1em;
+  font-size: 1.1em;
+  font-family: "Inconsolata";
+}
+ 
+.about .img-box {
+  margin-bottom: 3%;
+}
+
+.about .main-img {
+  border-radius: 50%;
+  border: 5px solid #E8F8F5;
+}
+
+/* connect */
+.connect {
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.connect .section-title {
+  color: rosybrown;
+  font-size: 2.4em;
+  font-family: "Caveat";
+}
+
+.connect .text-wrapper {
+  position: relative;
+  color: black;
+  margin-bottom: 20%;
+  padding-left: 30%;
+  padding-right: 30%;
+  line-height: 1.1em;
+  font-size: 1.1em;
+  font-family: "Inconsolata";
+}
+
+/* homepage image */
+.homeimg {
+  padding: 70px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hyperlink {
+  color: rosybrown;
+  text-decoration: none;
+}
