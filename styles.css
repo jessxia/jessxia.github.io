@@ -7,7 +7,7 @@ h1 {
   text-align: center;
 }
 .titles {
-  color: #B03A2E;
+  color: #b03a2e;
   font-family: "Caveat";
   font-size: 3.6em;
 }
@@ -20,11 +20,11 @@ body {
   text-align: center;
 }
 .navbar a:hover {
-  color: #E8F8F5;
-  background-color: #78281F;
+  color: #e8f8f5;
+  background-color: #78281f;
 }
 .navbar a {
-  color: #641E16;
+  color: #641e16;
   text-decoration: none;
   font-size: 1.2em;
   padding: 5px 12px;
@@ -34,12 +34,12 @@ body {
 }
 
 .navbar .current {
-  color: #78281F;
+  color: #78281f;
   font-weight: bold;
 }
 
-.navbar .current:hover{
-  color: #78281F;
+.navbar .current:hover {
+  color: #78281f;
   font-weight: bold;
   background-color: white;
 }
@@ -74,14 +74,14 @@ body {
   font-size: 1.1em;
   font-family: "Inconsolata";
 }
- 
+
 .about .img-box {
   margin-bottom: 3%;
 }
 
 .about .main-img {
   border-radius: 50%;
-  border: 5px solid #E8F8F5;
+  border: 5px solid rosybrown;
 }
 
 /* connect */
@@ -119,4 +119,48 @@ body {
 .hyperlink {
   color: rosybrown;
   text-decoration: none;
+}
+
+/* artwork gallery */
+.artwork {
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.artwork .section-title {
+  color: rosybrown;
+  font-size: 2.4em;
+  font-family: "Caveat";
+}
+
+.row {
+  display: flex;
+  padding: 0 6%;
+}
+
+.col {
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 6px;
+}
+
+.col img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
