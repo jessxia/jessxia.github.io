@@ -152,14 +152,14 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  .column {
+  .col {
     flex: 50%;
     max-width: 50%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .column {
+  .col {
     flex: 100%;
     max-width: 100%;
   }
