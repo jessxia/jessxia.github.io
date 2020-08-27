@@ -1,47 +1,54 @@
 @import url("https://fonts.googleapis.com/css?family=Caveat");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
+
+:root { /* charcoal: 424B54, sage: CDC6A5 */
+  --titleColor: #9B9ECE;
+  --sectionTitleColor: #CDC6A5;
+  --navColor: #424B54;
+}
 
 h1 {
   margin: 10px;
   text-align: center;
 }
 .titles {
-  color: #b03a2e;
+  color: var(--titleColor);
   font-family: "Caveat";
-  font-size: 3.6em;
+  font-size: 3.7em;
 }
 
 body {
   background-color: white;
 }
+
 /* navbar */
 .navbar {
   text-align: center;
 }
+
 .navbar a:hover {
-  color: #e8f8f5;
-  background-color: #78281f;
+  color: #CDC6A5;
 }
+
 .navbar a {
-  color: #641e16;
+  color: var(--navColor);
   text-decoration: none;
-  font-size: 1.2em;
-  padding: 5px 12px;
-  background-color: white;
+  font-size: 0.96em;
+  padding: 5px 9px;
   width: 25%;
-  font-family: "Inconsolata", "Arial";
+  font-family: "Lato";
 }
 
 .navbar .current {
-  color: #78281f;
+  color: #CDC6A5;
   font-weight: bold;
 }
 
 .navbar .current:hover {
-  color: #78281f;
+  color: var(--navColor);
   font-weight: bold;
-  background-color: white;
 }
 
 /* about me */
@@ -52,16 +59,16 @@ body {
 }
 
 .about .section-title {
-  color: rosybrown;
+  color: var(--sectionTitleColor);
   font-size: 2.4em;
   font-family: "Caveat";
 }
 
 .about .upper-title {
-  color: rosybrown;
+  color: #424B54;
   font-size: 1.2em;
   font-family: "Inconsolata";
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 
 .about .text-wrapper {
@@ -81,7 +88,7 @@ body {
 
 .about .main-img {
   border-radius: 50%;
-  border: 5px solid rosybrown;
+  border: 5px solid #9B9ECE;
 }
 
 /* connect */
@@ -92,7 +99,7 @@ body {
 }
 
 .connect .section-title {
-  color: rosybrown;
+  color: var(--sectionTitleColor);
   font-size: 2.4em;
   font-family: "Caveat";
 }
@@ -117,32 +124,35 @@ body {
 }
 
 .hyperlink {
-  color: rosybrown;
+  color: #9B9ECE;
   text-decoration: none;
 }
 
 /* artwork gallery */
+
 .artwork {
   position: relative;
   text-align: center;
   margin-top: 5%;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .artwork .section-title {
-  color: rosybrown;
+  color: var(--sectionTitleColor);
   font-size: 2.4em;
   font-family: "Caveat";
 }
 
 .row {
   display: flex;
-  padding: 0 6%;
+  padding: 0 4px;
 }
 
 .col {
   flex: 33.3%;
   max-width: 33.3%;
-  padding: 0 6px;
+  padding: 0 4px;
 }
 
 .col img {
@@ -151,16 +161,28 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .col {
-    flex: 50%;
-    max-width: 50%;
+    flex: 48.5%;
+    max-width: 48.5%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .col {
     flex: 100%;
     max-width: 100%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
   }
 }
