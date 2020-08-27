@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Caveat");
 @import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
 
-:root { /* charcoal: 424B54, sage: CDC6A5 */
-  --titleColor: #9B9ECE;
-  --sectionTitleColor: #CDC6A5;
-  --navColor: #424B54;
+:root {
+  /* charcoal: 424B54, sage: CDC6A5 */
+  --titleColor: #9b9ece;
+  --sectionTitleColor: #cdc6a5;
+  --hoverColor: #cdc6a5;
+  --navColor: #424b54;
+  --text: #424b54;
 }
 
 h1 {
@@ -23,13 +25,51 @@ body {
   background-color: white;
 }
 
+/* homepage image */
+.homeimg {
+  padding: 70px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hyperlink {
+  color: #9b9ece;
+  text-decoration: none;
+}
+
+span {
+  cursor: pointer;
+}
+
+#complete {
+  color: var(--navColor);
+  transition: color 0.5s ;
+}
+
+#complete:hover {
+  color: var(--hoverColor);
+  transition: color 0.5s;
+}
+
+#progress {
+  color: var(--navColor);
+  transition: color 0.5s ;
+}
+
+#progress:hover {
+  color: var(--hoverColor);
+  transition: color 0.5s;
+}
+
 /* navbar */
 .navbar {
   text-align: center;
 }
 
 .navbar a:hover {
-  color: #CDC6A5;
+  color: var(--hoverColor);
+  transition: color 0.5s;
 }
 
 .navbar a {
@@ -42,111 +82,101 @@ body {
 }
 
 .navbar .current {
-  color: #CDC6A5;
+  color: #cdc6a5;
   font-weight: bold;
 }
 
 .navbar .current:hover {
-  color: var(--navColor);
+  color: #cdc6a5;
   font-weight: bold;
+  transition: none;
+}
+
+.section-title {
+  color: var(--sectionTitleColor);
+  font-size: 2.2em;
+  font-family: "Caveat";
 }
 
 /* about me */
 .about {
   position: relative;
   text-align: center;
-  margin-top: 5%;
-}
-
-.about .section-title {
-  color: var(--sectionTitleColor);
-  font-size: 2.4em;
-  font-family: "Caveat";
+  margin-top: 2.5%;
 }
 
 .about .upper-title {
-  color: #424B54;
-  font-size: 1.2em;
-  font-family: "Inconsolata";
-  margin-bottom: 3%;
+  color: #424b54;
+  font-size: 1.04em;
+  font-family: "Lato";
+  margin-bottom: 1.5%;
 }
 
 .about .text-wrapper {
   position: relative;
-  color: black;
+  color: var(--text);
   margin-bottom: 20%;
-  padding-left: 30%;
-  padding-right: 30%;
-  line-height: 1.1em;
-  font-size: 1.1em;
-  font-family: "Inconsolata";
+  padding-left: 33%;
+  padding-right: 33%;
+  line-height: 1.3em;
+  font-size: 1em;
+  font-family: "Lato";
 }
 
 .about .img-box {
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }
 
 .about .main-img {
   border-radius: 50%;
-  border: 5px solid #9B9ECE;
+  border: 4px solid #cdc6a5;
+}
+
+/* projects */
+.projects {
+  position: relative;
+  text-align: center;
+  margin-top: 2.5%;
+}
+
+h3 {
+  font-weight: normal;
+  color: var(--text);
+  font-size: 1em;
+  font-family: "Lato";
 }
 
 /* connect */
 .connect {
   position: relative;
   text-align: center;
-  margin-top: 5%;
-}
-
-.connect .section-title {
-  color: var(--sectionTitleColor);
-  font-size: 2.4em;
-  font-family: "Caveat";
+  margin-top: 2.5%;
 }
 
 .connect .text-wrapper {
   position: relative;
-  color: black;
+  color: var(--text);
   margin-bottom: 20%;
   padding-left: 30%;
   padding-right: 30%;
-  line-height: 1.1em;
-  font-size: 1.1em;
-  font-family: "Inconsolata";
-}
-
-/* homepage image */
-.homeimg {
-  padding: 70px 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hyperlink {
-  color: #9B9ECE;
-  text-decoration: none;
+  line-height: 1.3em;
+  font-size: 1em;
+  font-family: "Lato";
 }
 
 /* artwork gallery */
-
-.artwork {
+.gallery {
   position: relative;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 2.5%;
   padding-left: 70px;
   padding-right: 70px;
-}
-
-.artwork .section-title {
-  color: var(--sectionTitleColor);
-  font-size: 2.4em;
-  font-family: "Caveat";
 }
 
 .row {
   display: flex;
   padding: 0 4px;
+  border: 2px solid #424b54;
 }
 
 .col {
