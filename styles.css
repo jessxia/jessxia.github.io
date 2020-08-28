@@ -1,24 +1,39 @@
 @import url("https://fonts.googleapis.com/css?family=Caveat");
 @import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Lato:ital@1");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 :root {
-  /* charcoal: 424B54, sage: CDC6A5 */
-  --titleColor: #9b9ece;
+  /* charcoal: 424B54, sage: CDC6A5, prussian blue: 1D2D44, periwinkle: 9b9ece */
+  --titleColor: #1D2D44;
   --sectionTitleColor: #cdc6a5;
   --hoverColor: #cdc6a5;
   --navColor: #424b54;
   --text: #424b54;
 }
 
+.loading {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+  background: url("imgs/loopy.gif") center no-repeat #fff;
+  background-size: 400px 240px;
+}
+
 h1 {
   margin: 10px;
   text-align: center;
 }
+
 .titles {
   color: var(--titleColor);
   font-family: "Caveat";
-  font-size: 3.7em;
+  font-weight: 300;
+  font-size: 4em;
 }
 
 body {
@@ -96,6 +111,7 @@ span {
   color: var(--sectionTitleColor);
   font-size: 2.2em;
   font-family: "Caveat";
+  font-weight: 300;
 }
 
 /* about me */
@@ -137,13 +153,54 @@ span {
   position: relative;
   text-align: center;
   margin-top: 2.5%;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 h3 {
-  font-weight: normal;
   color: var(--text);
   font-size: 1em;
   font-family: "Lato";
+}
+
+.projects .text-wrapper {
+  position: relative;
+  color: var(--text);
+  padding-left: 33%;
+  padding-right: 33%;
+  line-height: 1.3em;
+  font-size: 1em;
+  font-family: "Lato";
+}
+
+.projects .title {
+  text-align: left;
+  padding-left: 4px;
+  line-height: 1.3em;
+  font-size: 1em;
+  font-family: "Lato";
+  color: rosybrown;
+}
+
+.projects .title .desc {
+  font-size: 0.96em;
+  color: var(--text);
+}
+
+.projects .container {
+  display: flex;
+}
+
+.projects .box {
+  flex: 48.5%;
+  max-width: 48.5%;
+  padding: 0 4px;
+}
+
+.projects .box img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 /* connect */
