@@ -6,7 +6,7 @@
 
 :root {
   /* charcoal: 424B54, sage: CDC6A5, prussian blue: 1D2D44, periwinkle: 9b9ece */
-  --titleColor: #9b9ece;
+  --titleColor: #8e0e4a;
   --sectionTitleColor: #cdc6a5;
   --hoverColor: #cdc6a5;
   --navColor: #424b54;
@@ -32,7 +32,7 @@ h1 {
 .titles {
   color: var(--titleColor);
   font-family: "Caveat";
-  font-weight: 300;
+  font-weight: 200;
   font-size: 4em;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .hyperlink {
-  color: #9b9ece;
+  color: #8e0e4a;
   text-decoration: none;
 }
 
@@ -90,7 +90,7 @@ span {
 .navbar a {
   color: var(--navColor);
   text-decoration: none;
-  font-size: 0.96em;
+  font-size: 0.92em;
   padding: 5px 9px;
   width: 25%;
   font-family: "Lato";
@@ -109,7 +109,7 @@ span {
 
 .section-title {
   color: var(--sectionTitleColor);
-  font-size: 2.2em;
+  font-size: 1.86em;
   font-family: "Caveat";
   font-weight: 300;
 }
@@ -180,7 +180,7 @@ h3 {
   line-height: 1.3em;
   font-size: 1em;
   font-family: "Lato";
-  color: rosybrown;
+  color: #8e0e4a;
 }
 
 .projects .title .desc {
@@ -202,6 +202,11 @@ h3 {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+}
+
+.projects .box2 img {
+  margin-top: 8px;
+  vertical-align: middle;
 }
 
 /* connect */
@@ -245,7 +250,6 @@ h3 {
 .row {
   display: flex;
   padding: 0 4px;
-  border: 2px solid #424b54;
 }
 
 .col {
