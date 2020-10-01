@@ -7,8 +7,8 @@
 :root {
   /* charcoal: 424B54, sage: CDC6A5, prussian blue: 1D2D44, periwinkle: 9b9ece */
   --titleColor: #8e0e4a;
-  --sectionTitleColor: #cdc6a5;
-  --hoverColor: #cdc6a5;
+  --sectionTitleColor: white;
+  --hoverColor: white;
   --navColor: #424b54;
   --text: #424b54;
 }
@@ -20,7 +20,7 @@
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-  background: url("imgs/loopy.gif") center no-repeat #fff;
+  background: url("imgs/loopy.gif") center no-repeat #cdc6a5;
   background-size: 427px 240px;
 }
 
@@ -37,7 +37,7 @@ h1 {
 }
 
 body {
-  background-color: white;
+  background-color: #cdc6a5;
 }
 
 /* homepage image */
@@ -97,12 +97,12 @@ span {
 }
 
 .navbar .current {
-  color: #cdc6a5;
+  color: white;
   font-weight: bold;
 }
 
 .navbar .current:hover {
-  color: #cdc6a5;
+  color: white;
   font-weight: bold;
   transition: none;
 }
@@ -143,10 +143,11 @@ span {
   margin-bottom: 2%;
 }
 
+/*
 .about .main-img {
   border-radius: 50%;
   border: 4px solid #cdc6a5;
-}
+}*/
 
 /* projects */
 .projects {
